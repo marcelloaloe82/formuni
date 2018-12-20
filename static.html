@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+	body{
+		background-color: #eee;
+	}
+	
+	.top{
+		height: 200px;
+	}
+	
+	.buttons-container{
+		width: 30%;
+		margin: auto;
+		padding: 30px;
+	}
+	
+	.bottom{
+		padding: 50px;
+	}
+	
+	.input-group{
+		margin: 10px;
+	}
+  </style>
+</head>
+<body>
+
+
+  
+<div class="container">
+	<div id="top">
+		<div class="buttons-container">
+			<button type="button" class="btn btn-lg btn-default">Inserimento</button>
+			<button type="button" class="btn btn-lg btn-default">Ricerca</button>
+		</div>
+	</div>
+	
+	<div id="bottom">
+		<div class="form-group">
+			<form class="form-inline">
+				<div class="input-group">
+					<label for="basic-url">RACCOLTA</label>
+				   <input type="text" class="form-control" name="cod_raccolta" id="cod_raccolta" placeholder="codice della raccolta dati" >
+				</div>
+
+				<div class="input-group">
+					<label for="basic-url">POSIZIONE</label>
+					<input type="text" class="form-control" name="indirizzo" id="indirizzo" placeholder="Indirizzo rilevazione" >
+				 
+				</div>
+
+				<div class="input-group">
+					<label for="basic-url">DATA</label>
+					<input type="text" class="form-control" name="data" id="data"  placeholder="Data rilevazione" >
+				 </div>
+
+				
+				<div class="input-group">
+					<label for="basic-url">CODICE</label>
+				   <input type="text" class="form-control" name="codice_op" id="codice_op">
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">AGGIUNGI FILE </label>
+				   <input type="file" class="form-control" name="file_immagine" id="file_immagine" placeholder="Immagine" >
+				</div>
+
+				<div class="input-group">
+					<label for="basic-url">LOCALIZZAZIONE </label>
+					<select multiple class="form-control" name="localizzazione" id="localizzazione" >
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+					</select>
+				</div>
+
+				<div class="input-group">
+					<label for="basic-url">CATEGORIA/CONTESTO</label>
+					<select multiple class="form-control" name="categoria" id="categoria">
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+					</select>
+				 </div>
+
+				
+				<div class="input-group">
+					<label for="basic-url">SOTTOUNITÀ</label>
+				   <select multiple class="form-control" name="sottounita" id="sottounita" >
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+				   </select>
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">GENERE TESTUALE</label>
+				   <select multiple class="form-control" name="genere" id="genere" >
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+				   </select>
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">LINGUE PRESENTI</label>
+				   <select multiple class="form-control" name="lingue" id="lingue">
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+				   </select>
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">LINGUA DOMINANTE </label>
+				   <select multiple class="form-control" name="lingua_dominante" id="lingua_dominante">
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+				   </select>
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">LINGUA PROMINENTE</label>
+				   <select multiple class="form-control" name="lingua_prominente" id="lingua_prominente">
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+						<option>Opzione</option>
+				   </select>
+				</div>
+				
+				<div class="input-group">
+					<label for="basic-url">DESCRIZIONE</label>
+				   <textarea class="form-control" name="descrizione" id="descrizione"></textarea>
+				</div>
+				
+				<div>
+					 <button type="submit" class="btn btn-default">Invia</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+</div>
+
+</body>
+</html>
+
